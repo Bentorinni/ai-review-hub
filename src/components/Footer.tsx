@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import GishDevLogo from '@/assets/GishDevLogo';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -41,13 +42,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <a href="#" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center font-space font-bold text-primary-foreground">
-                G
-              </div>
-              <span className="font-space font-bold text-xl text-foreground">
-                Gish<span className="text-primary">Dev</span>
-              </span>
+            <a href="#" className="flex items-center mb-4">
+              <GishDevLogo className="h-10 w-auto text-foreground" />
             </a>
             <p className="text-muted-foreground max-w-md mb-6">
               Tworzymy nowoczesne strony internetowe, sklepy e-commerce i automatyzacje AI. 

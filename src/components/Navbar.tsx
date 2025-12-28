@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import GishDevLogo from '@/assets/GishDevLogo';
 
 const navItems = [
   { label: 'Usługi', href: '#uslugi' },
@@ -37,13 +38,8 @@ const Navbar = () => {
       <div className="container-section">
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center font-space font-bold text-primary-foreground group-hover:shadow-glow transition-all duration-300">
-              G
-            </div>
-            <span className="font-space font-bold text-xl text-foreground">
-              Gish<span className="text-primary">Dev</span>
-            </span>
+          <a href="#" className="flex items-center group">
+            <GishDevLogo className="h-10 w-auto text-foreground group-hover:opacity-80 transition-opacity" />
           </a>
 
           {/* Desktop Navigation */}
