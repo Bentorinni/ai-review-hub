@@ -98,9 +98,9 @@ const Hero = () => {
             className="grid grid-cols-3 gap-8 mt-20 max-w-2xl mx-auto"
           >
             {[
-              { value: '50+', label: 'Zrealizowanych projektów' },
               { value: '5.0', label: 'Ocena Google' },
               { value: '24h', label: 'Czas odpowiedzi' },
+              { value: '7 dni', label: 'Landing Page' },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-3xl sm:text-4xl font-bold font-space text-foreground mb-1">
