@@ -64,12 +64,12 @@ const WhyUs = () => {
             {/* Stats */}
             <div className="grid grid-cols-2 gap-6">
               <div className="glass-card p-6">
-                <div className="text-4xl font-bold font-space text-primary mb-2">50+</div>
-                <div className="text-muted-foreground text-sm">Zrealizowanych projektów</div>
+                <div className="text-4xl font-bold font-space text-primary mb-2">5.0</div>
+                <div className="text-muted-foreground text-sm">Ocena Google</div>
               </div>
               <div className="glass-card p-6">
-                <div className="text-4xl font-bold font-space text-accent mb-2">100%</div>
-                <div className="text-muted-foreground text-sm">Zadowolonych klientów</div>
+                <div className="text-4xl font-bold font-space text-accent mb-2">7 dni</div>
+                <div className="text-muted-foreground text-sm">Landing Page gotowy</div>
               </div>
             </div>
           </motion.div>
