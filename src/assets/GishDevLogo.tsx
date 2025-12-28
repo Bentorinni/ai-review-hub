@@ -15,6 +15,7 @@ const GishDevLogo = ({ className = "" }: { className?: string }) => {
           >
             <polyline points="16 18 22 12 16 6" />
             <polyline points="8 6 2 12 8 18" />
+            <line x1="12" y1="4" x2="12" y2="20" />
           </svg>
         </div>
       </div>
