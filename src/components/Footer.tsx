@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import GishDevLogo from '@/assets/GishDevLogo';
 
@@ -29,10 +30,12 @@ const Footer = () => {
               Umów bezpłatną konsultację i dowiedz się, jak możemy pomóc 
               rozwinąć Twój biznes w internecie.
             </p>
-            <Button variant="hero" size="xl">
-              Umów konsultację
-              <ArrowRight className="w-5 h-5" />
-            </Button>
+            <Link to="/konsultacja">
+              <Button variant="hero" size="xl">
+                Umów konsultację
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </Link>
           </div>
         </motion.div>
       </div>
@@ -42,9 +45,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <a href="#" className="flex items-center mb-4">
-              <GishDevLogo className="h-10 w-auto text-foreground" />
-            </a>
+            <Link to="/" className="flex items-center mb-4">
+              <GishDevLogo />
+            </Link>
             <p className="text-muted-foreground max-w-md mb-6">
               Tworzymy nowoczesne strony internetowe, sklepy e-commerce i automatyzacje AI. 
               Twój biznes w sieci zaczyna się od nas.
@@ -59,11 +62,11 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold font-space mb-4">Usługi</h4>
             <ul className="space-y-3 text-muted-foreground">
-              <li><a href="#uslugi" className="hover:text-primary transition-colors">Strony WWW</a></li>
-              <li><a href="#uslugi" className="hover:text-primary transition-colors">Sklepy internetowe</a></li>
-              <li><a href="#uslugi" className="hover:text-primary transition-colors">Automatyzacje AI</a></li>
-              <li><a href="#uslugi" className="hover:text-primary transition-colors">Landing Page</a></li>
-              <li><a href="#uslugi" className="hover:text-primary transition-colors">SEO</a></li>
+              <li><Link to="/#uslugi" className="hover:text-primary transition-colors">Strony WWW</Link></li>
+              <li><Link to="/#uslugi" className="hover:text-primary transition-colors">Sklepy internetowe</Link></li>
+              <li><Link to="/#uslugi" className="hover:text-primary transition-colors">Automatyzacje AI</Link></li>
+              <li><Link to="/#uslugi" className="hover:text-primary transition-colors">Landing Page</Link></li>
+              <li><Link to="/#uslugi" className="hover:text-primary transition-colors">SEO</Link></li>
             </ul>
           </div>
 
@@ -71,10 +74,11 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold font-space mb-4">Firma</h4>
             <ul className="space-y-3 text-muted-foreground">
-              <li><a href="#portfolio" className="hover:text-primary transition-colors">Portfolio</a></li>
-              <li><a href="#opinie" className="hover:text-primary transition-colors">Opinie</a></li>
-              <li><a href="#cennik" className="hover:text-primary transition-colors">Cennik</a></li>
-              <li><a href="#kontakt" className="hover:text-primary transition-colors">Kontakt</a></li>
+              <li><Link to="/portfolio" className="hover:text-primary transition-colors">Portfolio</Link></li>
+              <li><Link to="/opinie" className="hover:text-primary transition-colors">Opinie</Link></li>
+              <li><Link to="/cennik" className="hover:text-primary transition-colors">Cennik</Link></li>
+              <li><Link to="/kontakt" className="hover:text-primary transition-colors">Kontakt</Link></li>
+              <li><Link to="/konsultacja" className="hover:text-primary transition-colors">Umów konsultację</Link></li>
             </ul>
           </div>
         </div>
