@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Check, ArrowRight, Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
 const pricingPlans = [
@@ -130,12 +131,14 @@ const Pricing = () => {
               </ul>
 
               {/* CTA */}
-              <Button
-                variant={plan.popular ? 'hero' : 'outline'}
-                className="w-full"
-              >
-                Wyceń projekt
-              </Button>
+              <Link to="/konsultacja" className="w-full">
+                <Button
+                  variant={plan.popular ? 'hero' : 'outline'}
+                  className="w-full"
+                >
+                  Wyceń projekt
+                </Button>
+              </Link>
             </motion.div>
           ))}
         </div>
@@ -156,10 +159,12 @@ const Pricing = () => {
               Każdy projekt jest inny. Opowiedz nam o swoich potrzebach, 
               a przygotujemy indywidualną wycenę.
             </p>
-            <Button variant="hero" size="lg">
-              Uzyskaj indywidualną wycenę
-              <ArrowRight className="w-5 h-5" />
-            </Button>
+            <Link to="/konsultacja">
+              <Button variant="hero" size="lg">
+                Uzyskaj indywidualną wycenę
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </Link>
           </div>
         </motion.div>
       </div>

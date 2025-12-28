@@ -5,11 +5,11 @@ import {
   Bot, 
   Rocket, 
   Search, 
-  PenTool, 
   Server,
   ArrowRight 
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const services = [
   {
@@ -33,7 +33,7 @@ const services = [
   {
     icon: Rocket,
     title: 'Landing Page',
-    description: 'Strony lądowania zoptymalizowane pod konwersję — idealnie do kampanii marketingowych.',
+    description: 'Strony lądowania zoptymalizowane pod konwersję — idealne do kampanii marketingowych.',
     features: ['Szybka realizacja', 'A/B testing', 'Analityka'],
   },
   {
@@ -41,12 +41,6 @@ const services = [
     title: 'SEO',
     description: 'Pozycjonowanie, które przynosi realne wyniki — więcej ruchu, więcej klientów.',
     features: ['Audyt SEO', 'Optymalizacja', 'Content'],
-  },
-  {
-    icon: PenTool,
-    title: 'Copywriting',
-    description: 'Teksty, które sprzedają — od nagłówków po pełne opisy produktów i usług.',
-    features: ['Treści sprzedażowe', 'Blog', 'UX Writing'],
   },
   {
     icon: Server,
@@ -137,10 +131,12 @@ const Services = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center mt-16"
         >
-          <Button variant="hero" size="xl">
-            Umów bezpłatną konsultację
-            <ArrowRight className="w-5 h-5" />
-          </Button>
+          <Link to="/konsultacja">
+            <Button variant="hero" size="xl">
+              Umów bezpłatną konsultację
+              <ArrowRight className="w-5 h-5" />
+            </Button>
+          </Link>
         </motion.div>
       </div>
     </section>

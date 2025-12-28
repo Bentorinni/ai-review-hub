@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import heroBg from '@/assets/hero-bg.jpg';
 
@@ -76,13 +77,17 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Button variant="hero" size="xl" className="group">
-              Umów konsultację
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="hero-outline" size="xl">
-              Wyceń projekt
-            </Button>
+            <Link to="/konsultacja">
+              <Button variant="hero" size="xl" className="group">
+                Umów konsultację
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+            <Link to="/cennik">
+              <Button variant="hero-outline" size="xl">
+                Wyceń projekt
+              </Button>
+            </Link>
           </motion.div>
 
           {/* Stats */}
