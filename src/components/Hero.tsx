@@ -23,16 +23,8 @@ const Hero = () => {
       <div className="absolute inset-0 ai-grid-pattern opacity-30" />
 
       {/* Floating Elements */}
-      <motion.div
-        animate={{ y: [0, -20, 0] }}
-        transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
-        className="absolute top-1/4 left-[10%] w-20 h-20 rounded-2xl bg-primary/10 border border-primary/20 backdrop-blur-sm hidden lg:block"
-      />
-      <motion.div
-        animate={{ y: [0, 20, 0] }}
-        transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-        className="absolute bottom-1/3 right-[15%] w-16 h-16 rounded-full bg-accent/10 border border-accent/20 backdrop-blur-sm hidden lg:block"
-      />
+      <div className="absolute top-1/4 left-[10%] w-20 h-20 rounded-2xl bg-primary/10 border border-primary/20 backdrop-blur-sm hidden lg:block floating-animation" />
+      <div className="absolute bottom-1/3 right-[15%] w-16 h-16 rounded-full bg-accent/10 border border-accent/20 backdrop-blur-sm hidden lg:block floating-animation" style={{ animationDelay: '1s' }} />
 
       {/* Content */}
       <div className="container-section relative z-10 py-32">
